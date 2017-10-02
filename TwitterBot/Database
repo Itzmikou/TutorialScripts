@@ -1,0 +1,14 @@
+CREATE DATABASE TWITTER ; 
+
+
+
+CREATE TABLE "public"."youtube_videos" (
+	"id" int4,
+	"title" varchar(200) COLLATE "default",
+	"url" varchar(200) COLLATE "default",
+	"twitter_hashtags" varchar(200) COLLATE "default"
+)
+WITH (OIDS=FALSE);
+ALTER TABLE "public"."youtube_videos" OWNER TO "postgres";
+
+
